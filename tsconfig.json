@@ -1,3 +1,18 @@
 {
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true,
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "jsx": "react", 
+    "paths": {
+      "@env": ["./node_modules/react-native-dotenv"],
+      "react": ["./node_modules/@types/react"],
+      "assets/*": ["./src/assets/*"],
+      "screens/*": ["./src/screens/*"],
+      // "utils/*": ["./src/utils/*"]
+    },
+    "include": ["./src/index.d.ts"]
+  },
   "extends": "@react-native/typescript-config/tsconfig.json"
 }
